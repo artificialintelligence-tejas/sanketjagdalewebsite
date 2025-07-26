@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanket Jagdale - Financial Professional</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Slate-50 */
+            color: #0f172a; /* Slate-900 */
+        }
+
+        /* Custom Colors */
+        .primary-color { color: #1e3a8a; } /* Blue-800 */
+        .bg-primary { background-color: #1e3a8a; }
+        .border-primary { border-color: #1e3a8a; }
+        .bg-secondary { background-color: #eef2ff; } /* Indigo-50 */
+
+        /* Animation for sections fading in on scroll */
+        .scroll-animate {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .scroll-animate.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/90 backdrop-blur-lg sticky top-0 z-50 shadow-md">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold primary-color">Sanket Jagdale</a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#about" class="text-slate-600 hover:primary-color transition font-medium">About</a>
+                <a href="#experience" class="text-slate-600 hover:primary-color transition font-medium">Experience</a>
+                <a href="#skills" class="text-slate-600 hover:primary-color transition font-medium">Skills</a>
+                <a href="#contact" class="px-6 py-2 text-white bg-primary rounded-md hover:bg-blue-900 transition font-semibold transform hover:scale-105">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="bg-secondary">
+            <div class="container mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-center md:text-left">
+                    <span class="text-lg font-semibold primary-color">FINANCIAL ANALYST & ACCOUNTANT</span>
+                    <h1 class="text-5xl md:text-6xl font-extrabold text-slate-900 mt-2">Sanket Jagdale</h1>
+                    <p class="mt-6 text-lg text-slate-600 max-w-lg mx-auto md:mx-0">
+                        Detail-oriented professional blending practical accounting experience with a passion for data-driven analysis and process optimization through SAP FICO.
+                    </p>
+                    <div class="mt-8">
+                        <a href="#contact" class="inline-block px-8 py-3 text-white bg-primary rounded-md hover:bg-blue-900 transition transform hover:scale-105 font-semibold">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="flex justify-center p-4">
+                    <div class="relative w-80 h-80">
+                        <!-- A subtle background element for depth -->
+                        <div class="absolute inset-0 bg-blue-200 rounded-full transform translate-x-3 translate-y-3"></div>
+                        <!-- The main image -->
+                        <img src="https://raw.githubusercontent.com/artificialintelligence-tejas/sanketjagdalewebsite/main/sanketimage.jpeg" alt="Sanket Jagdale" class="relative w-full h-full rounded-full object-cover shadow-xl border-4 border-white">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20">
+            <div class="container mx-auto px-6 scroll-animate">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-slate-800">About Me</h2>
+                    <div class="w-24 h-1 bg-primary mx-auto mt-4"></div>
+                </div>
+                <p class="text-slate-600 leading-relaxed max-w-3xl mx-auto text-center text-lg">
+                    Driven by a passion for financial accuracy, I excel at transforming complex data into clear, actionable insights. With a solid foundation in accounting and a strategic focus on mastering SAP FICO, I bring a modern, tech-forward approach to financial management. I thrive on identifying efficiencies that drive real-world results and am committed to bringing both precision and proactive problem-solving to your team.
+                </p>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-20 bg-white">
+            <div class="container mx-auto px-6 scroll-animate">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-slate-800">Career History</h2>
+                    <div class="w-24 h-1 bg-primary mx-auto mt-4"></div>
+                </div>
+                <div class="max-w-3xl mx-auto bg-secondary p-8 rounded-lg shadow-sm border-l-4 border-primary">
+                    <h3 class="text-2xl font-bold">Assistant Accountant</h3>
+                    <p class="text-slate-600 font-medium">Income Tax & GST Consultation, Palus</p>
+                    <p class="primary-color font-semibold mt-1">Dec 2023 - Jul 2024</p>
+                    <ul class="mt-4 list-disc list-inside text-slate-600 space-y-2">
+                        <li>Ensured accuracy and compliance across all financial records, resulting in clean and efficient audits.</li>
+                        <li>Proactively identified and implemented key cost-saving efficiencies, improving financial performance.</li>
+                        <li>Managed comprehensive financial records with a steadfast focus on data integrity and best practices.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills & Education Section -->
+        <section id="skills" class="py-20">
+            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-16 items-start">
+                <!-- Skills -->
+                <div class="scroll-animate">
+                    <h2 class="text-3xl font-bold text-slate-800 mb-6">Core Competencies</h2>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-slate-200 text-slate-700 font-medium px-4 py-2 rounded-md transition transform hover:scale-105">MS Excel</span>
+                        <span class="bg-slate-200 text-slate-700 font-medium px-4 py-2 rounded-md transition transform hover:scale-105">Tally Prime</span>
+                        <span class="bg-primary text-white font-medium px-4 py-2 rounded-md transition transform hover:scale-105">SAP FICO (S4 HANA)</span>
+                        <span class="bg-slate-200 text-slate-700 font-medium px-4 py-2 rounded-md transition transform hover:scale-105">Bookkeeping</span>
+                        <span class="bg-slate-200 text-slate-700 font-medium px-4 py-2 rounded-md transition transform hover:scale-105">Financial Reporting</span>
+                        <span class="bg-slate-200 text-slate-700 font-medium px-4 py-2 rounded-md transition transform hover:scale-105">Income Tax</span>
+                        <span class="bg-slate-200 text-slate-700 font-medium px-4 py-2 rounded-md transition transform hover:scale-105">GST Consultation</span>
+                    </div>
+                </div>
+                <!-- Education -->
+                <div class="scroll-animate">
+                    <h2 class="text-3xl font-bold text-slate-800 mb-6">Education</h2>
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-lg shadow-sm transition transform hover:scale-105">
+                            <h3 class="font-bold text-lg">PG-MBA, 2nd Year</h3>
+                            <p class="text-slate-500">Parul University, Gujarat</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm transition transform hover:scale-105">
+                            <h3 class="font-bold text-lg">Bachelor of Commerce</h3>
+                            <p class="text-slate-500">Shivaji University, 2021 - 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="bg-primary text-white">
+            <div class="container mx-auto px-6 py-20 text-center">
+                <h2 class="text-4xl font-bold">Ready to Elevate Your Team?</h2>
+                <p class="mt-4 text-blue-200 max-w-2xl mx-auto">I'm actively seeking new opportunities and am eager to discuss how my skills in finance and accounting can benefit your organization.</p>
+                <div class="mt-8 flex flex-col sm:flex-row justify-center items-center gap-4">
+                    <a href="mailto:sanketjagdale277@gmail.com" class="w-full sm:w-auto px-8 py-3 bg-white primary-color rounded-md hover:bg-slate-200 transition transform hover:scale-105 text-lg font-bold shadow-lg">
+                        Email Me
+                    </a>
+                    <a href="https://drive.google.com/file/d/1C7pcsbJ9DliCYORBosQ98UI3yHG4gXAw/view?usp=sharing" target="_blank" class="w-full sm:w-auto px-8 py-3 border-2 border-white rounded-md hover:bg-white/10 transition transform hover:scale-105 text-lg font-bold">
+                        Download Resume
+                    </a>
+                </div>
+                <a href="tel:8623821142" class="mt-8 text-blue-300 inline-flex items-center group">
+                    <svg class="w-5 h-5 mr-2 transition-transform group-hover:scale-110" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75A2.25 2.25 0 0015.75 1.5h-2.25" />
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 18.75h3" />
+                    </svg>
+                    8623821142
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center py-6 bg-slate-800 text-slate-400">
+        <p>&copy; 2024 Sanket Jagdale. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const animatedElements = document.querySelectorAll('.scroll-animate');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            animatedElements.forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+
+</body>
+</html>
